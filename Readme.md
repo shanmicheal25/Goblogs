@@ -58,7 +58,7 @@ Docker Desktop need to install in your machine.
 
 ## Folder structure should be like below,
 
-    see documentation ![here](./projectFolderStructure.png)
+    see documentation [here](./projectFolderStructure.png)
 
    
 
