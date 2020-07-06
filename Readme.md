@@ -23,12 +23,11 @@ Inside the DockerBlogs, contains docker-compose.yml this file will help to spin 
 
 ## Folder structure should be like below,
 
-
-
+see documentation [here](./projectFolderStructure.png)
 
 ## API Specification.
 
-    Can find postman collection list GoBlogs.postman_collection.json
+    Postman collection list GoBlogs.postman_collection.json
 
 ## User Details:
 
