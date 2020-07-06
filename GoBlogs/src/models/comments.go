@@ -11,7 +11,7 @@ type Comments struct {
 	ParentCommID uint      `gorm:"type:int" json:"parent_comm_id"`
 	CommentLevel uint      `gorm:"type:int" json:"comment_level"`
 	ReplyCount   uint      `gorm:"type:int" json:"reply_count"`
-	CreateAt     time.Time `gorm:"type:time" json:"create_at,omitempty"`
+	CreateAt     time.Time `gorm:"type:datetime" json:"create_at"`
 	ShowComment  string    `gorm:"type:varchar(1)" json:"show_comment"`
 	//Posts        Posts
 }

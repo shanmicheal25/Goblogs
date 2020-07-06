@@ -68,7 +68,7 @@ func CommentPost(c *gin.Context) {
 	commService.Comment.ParentCommID = commReq.ParentCommID
 	commService.Comment.CommentText = commReq.CommentText
 	commService.Comment.CommentLevel = commReq.CommentLevel + 1
-	commService.Comment.CreateAt = time.Now()
+	commService.Comment.CreateAt =  time.Now()
 	commService.Comment.ShowComment = "Y"
 	commService.Comment.ReplyCount = 0
 

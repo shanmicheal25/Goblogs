@@ -30,10 +30,11 @@ Docker Desktop need to install in your machine.
 
     Inside the folder, contains docker-compose.yml this file will help to spin the application.
 
-## Run the application use below command and steps as follow,
+## Run the application, execute the following commend step by step,
 
     Step 1:
         
+        docker-compose build --no-cache
         docker-compose up --build
 
     Step 2:
@@ -61,9 +62,9 @@ Docker Desktop need to install in your machine.
 
 ## Folder structure should be like below,
 
-see documentation [here](./projectFolderStructure.png)
+    see documentation [here](./projectFolderStructure.png)
 
-
+    see output looks [here](./outputlookandfeel.png)
 
 ## API Specification.
 

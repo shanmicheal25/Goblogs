@@ -28,6 +28,7 @@ type BlogsCommService struct {
 func (blogs BlogsService) BlogsFilter(page int, limit int) map[string]interface{} {
 
 	postArr := blogs.Posts
+	fmt.Println(postArr)
 	//comments := models.Comments{}  Related(&comments)
 
 	//paginator := models.GetDB().Preload("Comments").Find(&postArr)
@@ -35,7 +36,7 @@ func (blogs BlogsService) BlogsFilter(page int, limit int) map[string]interface{
 		DB:      models.GetDB().Preload("Comments").Where("show_post = 'Y'"),
 		Page:    page,
 		Limit:   limit,
-		OrderBy: []string{"post_id desc"},
+		OrderBy: []string{"post_id asc"},
 		ShowSQL: true,
 	}, &postArr)
 
