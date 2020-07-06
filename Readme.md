@@ -7,9 +7,9 @@ Docker Desktop need to install in your machine.
 
 Here you can find, 3 application in the git folder, 
 
-AngularClient - frontend
-GoBlogs       - backend
-Mysql         - Database
+    AngularClient - frontend
+    GoBlogs       - backend
+    Mysql         - Database
 
 Each folder have the own dockerfile to download their libraries.
 
@@ -18,6 +18,12 @@ Inside the DockerBlogs, contains docker-compose.yml this file will help to spin 
 ## Run the application use below command.
 
     docker-compose up --build
+
+
+
+## Folder structure should be like below,
+
+
 
 
 ## API Specification.
