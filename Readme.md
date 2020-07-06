@@ -58,9 +58,9 @@ Docker Desktop need to install in your machine.
 
 ## Folder structure should be like below,
 
-    see documentation [[https://github.com/shanmicheal25/Goblogs/blob/master/projectFolderStructure.png]]
+    see documentation [https://github.com/shanmicheal25/Goblogs/blob/master/projectFolderStructure.png]
 
-    see output looks [[https://github.com/shanmicheal25/Goblogs/blob/master/outputlookandfeel.png]]
+    see output looks [https://github.com/shanmicheal25/Goblogs/blob/master/outputlookandfeel.png]
 
 ## API Specification.
 
