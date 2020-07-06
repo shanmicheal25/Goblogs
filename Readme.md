@@ -1,63 +1,3 @@
-```
-
-docker-compose build --no-cache 
-
-docker-compose up --build
-docker exec -it goblogs-cli bash
-
-cd src/GoBlogs/
-
-go run main.go
-```
-
-'''
-Check the MySql database details,
-
-$ docker exec -it golang_db mysql -udocker -p
-Enter password : docker
-
-$ docker exec -it golang_db mysql -uroot -p
-Enter password : root
-
-$ show databases;
-
-$ use 
-
-
-## check the logs in mysql database comments.
-$ docker logs golang_db
-
-## container shell access 
-$ docker exec -it golang_db bash
-
-$ docker stop golang_db
-$ docker start golang_db
-$ docker restart golang_db
-
-$ docker rm golang_db 
-'''
-
-
-Delete all the container and images using below command .
-
-Delete all docker containers (must be run before trying to delete images)
-
-$ docker rm $(docker ps -aq)
-Delete all docker images:
-
-$ docker rmi $(docker images -q)
-
-
-''''
-## Pain points i faced when I develop the application .
-1. Find the valuable query the level of record and proper database design for comments as tree structure.
-
-## one level.
-    SELECT * FROM article.comment where postid = 101 and level = 1  order by parentCommentId asc; 
-
-'''
-
-
 ## prerequisite
 
 Docker Desktop need to install in your machine.
@@ -82,8 +22,9 @@ Inside the DockerBlogs, contains docker-compose.yml this file will help to spin 
 
 ## API Specification.
 
-User Details:
+## Can find postman collection list GoBlogs.postman_collection.json
 
+## User Details:
 
 POST   http://localhost:9090//api/v1/user              
 
@@ -98,22 +39,41 @@ Request Body:
     "address": "AMK"
 }
 
+## Post Blogs
 
 POST   http://localhost:9090//api/v1/blogs   
 
+Request Body: 
+
+{
+    "user_id": 101,
+    "text": "At this point you might be thinking “Why create all the packages, separate files, layers of functions and what not?” — well, the answer "
+}
+
+## Read a Blogs
+
+GET    http://localhost:9090//api/v1/blogs?user_id=101&nextpage=0     
 
 
-GET    http://localhost:9090//api/v1/blogs            
+## Post a comment for particular blog post with post_id
 
+POST   http://localhost:9090//api/v1/comments     
 
+Request Body:
 
-GET    http://localhost:9090//api/v1/comments          
+{
+    "user_id": 101,
+    "post_id": 1001,
+    "comment_text": "Created a comment for the post.",
+    "comment_level": 1,
+    "parent_comm_id": 0
+}
 
-POST   http://localhost:9090//api/v1/comments      
+## Get a comment list using a particular post_id
 
-GET    http://localhost:9090//api/v1/subcomments     
+GET    http://localhost:9090//api/v1/comments?post_id=1001&nextpage=0          
 
-http://localhost:9090/api/v1/user
+GET    http://localhost:9090//api/v1/subcomments?comment_id=1&nextpage=0   
 
 
 ## Below for debugging
