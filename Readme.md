@@ -22,7 +22,7 @@ Inside the DockerBlogs, contains docker-compose.yml this file will help to spin 
 
 ## API Specification.
 
-## Can find postman collection list GoBlogs.postman_collection.json
+    Can find postman collection list GoBlogs.postman_collection.json
 
 ## User Details:
 
@@ -50,9 +50,9 @@ Request Body:
     "text": "At this point you might be thinking “Why create all the packages, separate files, layers of functions and what not?” — well, the answer "
 }
 
-## Read a Blogs
+## Read a Blogs 
 
-GET    http://localhost:9090//api/v1/blogs?user_id=101&nextpage=0     
+GET   http://localhost:9090//api/v1/blogs?user_id=101&nextpage=0     
 
 
 ## Post a comment for particular blog post with post_id
