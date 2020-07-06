@@ -3,20 +3,17 @@
 Docker Desktop need to install in your machine.
 
 
-## Download the application from the Git hub using below url,
+## Download the application from the Git hub using this url, (https://github.com/shanmicheal25/Goblogs.git)
 
-    Here you can find, 3 application in the git folder, 
+    In addition, please copy Angularclient frontend application from this url (https://github.com/shanmicheal25/AngularClient.git) and place into the AngularClient folder (https://github.com/shanmicheal25/Goblogs.git)
 
-        https://github.com/shanmicheal25/AngularClient.git
+    ALl together this application should have three folders (frontend, backend, database) as like below,
 
-            AngularClient - frontend
+           1. AngularClient - frontend
+           2. GoBlogs       - backend
+           3. Mysql         - Database
 
-        https://github.com/shanmicheal25/Goblogs.git
-
-            GoBlogs       - backend
-            Mysql         - Database
-
-    combine both application into same folder looks below.
+    Finally, Folder structure should look like the below.
 
         AngularClient
         GoBlogs
@@ -26,9 +23,9 @@ Docker Desktop need to install in your machine.
         projectFolderStructure.png
         Readme.md
 
-    Each folder have the own dockerfile to download their libraries.
+    Each folder have own dockerfile to download their libraries.
 
-    Inside the folder, contains docker-compose.yml this file will help to spin the application.
+    Inside the application, it contains "docker-compose.yml" this file will help to spin the application.
 
 ## Run the application, execute the following commend step by step,
 
@@ -37,14 +34,13 @@ Docker Desktop need to install in your machine.
         docker-compose build --no-cache
         docker-compose up --build
 
-    Step 2:
+    Step 2: (please exec once step 1 completed)
 
-        Once docker compose build the application done. create record for only user table using below API     
+        To create user details, use the below API from postman.    
 
-        POST   http://localhost:9090/api/v1/user              
-
+        URL:   http://localhost:9090/api/v1/user      
+        Method: POST        
         Request Body: 
-
         {
             "user_id": 101,
             "name": "shankar",
@@ -64,7 +60,7 @@ Docker Desktop need to install in your machine.
 
     see documentation [here](./projectFolderStructure.png)
 
-    see output looks [here](./outputlookandfeel.png)
+
 
 ## API Specification.
 
