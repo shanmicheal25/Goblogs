@@ -43,7 +43,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"user_id\": 101,\n    \"post_id\": 1001,\n    \"comment_text\": \"Created a comment for the post.\",\n    \"comment_level\": 1,\n    \"parent_comm_id\": 0\n}",
+					"raw": "{\n    \"user_id\": 101,\n    \"post_id\": 1,\n    \"comment_text\": \"Created a comment for the post.\",\n    \"comment_level\": 0,\n    \"parent_comm_id\": 0\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -104,7 +104,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"user_id\": 101,\n    \"text\": \"New post related to the News feed from India\"\n}",
+					"raw": "{\n    \"user_id\": 101,\n    \"text\": \"At this point you might be thinking “Why create all the packages, separate files, layers of functions and what not?” — well, the answer \"\n}",
 					"options": {
 						"raw": {
 							"language": "json"

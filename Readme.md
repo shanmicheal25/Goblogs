@@ -3,17 +3,32 @@
 Docker Desktop need to install in your machine.
 
 
-## Download the application from the Git hub DockerBlogs,
+## Download the application from the Git hub using below url,
 
-Here you can find, 3 application in the git folder, 
+    Here you can find, 3 application in the git folder, 
 
-    AngularClient - frontend
-    GoBlogs       - backend
-    Mysql         - Database
+        https://github.com/shanmicheal25/AngularClient.git
 
-Each folder have the own dockerfile to download their libraries.
+            AngularClient - frontend
 
-Inside the DockerBlogs, contains docker-compose.yml this file will help to spin the application.
+        https://github.com/shanmicheal25/Goblogs.git
+
+            GoBlogs       - backend
+            Mysql         - Database
+
+    combine both application into same folder looks below.
+
+        AngularClient
+        GoBlogs
+        MySql
+        docker-compose.yml
+        GoBlogs.postman_collection.json
+        projectFolderStructure.png
+        Readme.md
+
+    Each folder have the own dockerfile to download their libraries.
+
+    Inside the folder, contains docker-compose.yml this file will help to spin the application.
 
 ## Run the application use below command and step follow,
 
