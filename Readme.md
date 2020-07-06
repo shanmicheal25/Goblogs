@@ -25,7 +25,7 @@ Inside the DockerBlogs, contains docker-compose.yml this file will help to spin 
 
         Once docker compose build the application done. create record for only user table using below API     
 
-        POST   http://localhost:9090//api/v1/user              
+        POST   http://localhost:9090/api/v1/user              
 
         Request Body: 
 
