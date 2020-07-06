@@ -15,15 +15,40 @@ Each folder have the own dockerfile to download their libraries.
 
 Inside the DockerBlogs, contains docker-compose.yml this file will help to spin the application.
 
-## Run the application use below command.
+## Run the application use below command and step follow,
 
-    docker-compose up --build
+    Step 1:
+        
+        docker-compose up --build
 
+    Step 2:
+
+        Once docker compose build the application done. create record for only user table using below API     
+
+        POST   http://localhost:9090//api/v1/user              
+
+        Request Body: 
+
+        {
+            "user_id": 101,
+            "name": "shankar",
+            "email": "shanmicheal25@gmail.com",
+            "mobile": "85993401",
+            "password": "abcd1234",
+            "address": "AMK"
+        }
+
+    Step 3:
+        Open the browser and run the below url,
+
+        http://localhost:4200
 
 
 ## Folder structure should be like below,
 
 see documentation [here](./projectFolderStructure.png)
+
+
 
 ## API Specification.
 
