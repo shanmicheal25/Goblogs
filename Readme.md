@@ -56,11 +56,14 @@ Docker Desktop need to install in your machine.
         http://localhost:4200
 
 
-## Folder structure should be like below,
+## Folder structure should look like below,
 
-    see documentation [here](./projectFolderStructure.png)
+    https://github.com/shanmicheal25/Goblogs/blob/master/projectFolderStructure.png
 
-   
+## blogs post page look like below,
+
+    https://github.com/shanmicheal25/Goblogs/blob/master/outputlookandfeel.png
+    
 
 ## API Specification.
 
