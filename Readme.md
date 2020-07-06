@@ -8,7 +8,7 @@ Docker Desktop need to install in your machine.
     In addition, please copy Angularclient frontend application from this url (https://github.com/shanmicheal25/AngularClient.git),
     and place into the AngularClient folder (https://github.com/shanmicheal25/Goblogs.git)
 
-    ALl together this application should have three folders (frontend, backend, database) as like below,
+    All together this application should have three folders (frontend, backend, database) as like below,
 
            1. AngularClient - frontend
            2. GoBlogs       - backend
