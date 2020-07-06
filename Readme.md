@@ -128,12 +128,18 @@ mysql> use blogsdb;
 
 mysql> show tables;
 
-## container shell access if need can debug.
-$ docker exec -it golang_db bash
+## container shell access if need can debug Mysql Db
+    docker exec -it golang_db bash
 
-$ docker stop golang_db
-$ docker start golang_db
-$ docker restart golang_db
+    docker stop golang_db
+    docker start golang_db
+    docker restart golang_db
+
+
+## container shell access if need can debug or manually run Golang application
+    docker exec -it goblogs-cli bash
+    cd src/GoBlogs/
+    go run main.go
 
 ## Delete the all local images use below commands.
 
