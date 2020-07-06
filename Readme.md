@@ -30,7 +30,7 @@ Docker Desktop need to install in your machine.
 
     Inside the folder, contains docker-compose.yml this file will help to spin the application.
 
-## Run the application use below command and step follow,
+## Run the application use below command and steps as follow,
 
     Step 1:
         
